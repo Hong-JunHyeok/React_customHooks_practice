@@ -17,3 +17,21 @@ return (
   </>
 );
 ```
+
+## - useToggle
+
+사용 양식
+
+```typescript
+const [isChecked, toggleIsChecked] = useToggle(false);
+
+return (
+  <>
+    <hr />
+    <h2>useToggle</h2>
+    <div onClick={() => toggleIsChecked()} style={isChecked ? toggledStyle : style}>
+      {isChecked ? 'on' : 'off'}
+    </div>
+  </>
+);
+```

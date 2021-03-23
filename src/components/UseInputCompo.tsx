@@ -14,6 +14,8 @@ function UseInputCompo() {
 
   return (
     <>
+      <hr />
+      <h2>useInput</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" value={form.email} onChange={formHandler} id="email" />
         <input type="password" value={form.password} onChange={formHandler} id="password" />
